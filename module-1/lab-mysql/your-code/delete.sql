@@ -1,0 +1,1 @@
+DELETE FROM Cars WHERE Car_id = 5;
