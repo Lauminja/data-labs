@@ -1,4 +1,4 @@
-'''lab-mysql-select'''
+#lab-mysql-select
 
 #Challenge_1
 SELECT authors.au_id AS 'AUTHOR ID', authors.au_lname AS 'LAST NAME', authors.au_fname AS 'FIRST NAME', titles.title AS 'TITLE', publishers.pub_name AS 'PUBLISHER'
@@ -49,7 +49,7 @@ ORDER BY SUM(sales.qty) DESC
 ;
 
 #Bonus
-SELECT authors.au_id AS 'AUTHOR ID', authors.au_lname AS 'LAST NAME', authors.au_fname AS 'FIRST NAME', SUM(titles.advance + titles.ytd_sales*titles.royalty/100*titleauthor.royaltyper/100) AS 'PROFIT'
+SELECT authors.au_id AS 'AUTHOR ID', authors.au_lname AS 'LAST NAME', authors.au_fname AS 'FIRST NAME', titles.advance + titles.price * sales.qty * titles.royalty / 100 * titleauthor.royaltyper / 100 AS 'PROFIT'
 FROM titleauthor
 RIGHT JOIN authors
 ON authors.au_id = titleauthor.au_id
@@ -57,6 +57,5 @@ LEFT JOIN titles
 ON titleauthor.title_id = titles.title_id
 INNER JOIN sales
 ON titles.title_id = sales.title_id
-GROUP BY authors.au_id, authors.au_lname, authors.au_fname
-ORDER BY SUM(titles.advance + titles.royalty*sales.qty) DESC
+ORDER BY 'PROFIT' DESC
 LIMIT 3;
