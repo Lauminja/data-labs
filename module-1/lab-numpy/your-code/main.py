@@ -10,11 +10,15 @@ print(np.show_config())
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 a = np.random.random((2,3,5))
-??
-
+a1 = np.random.rand(2,3,5)
+a2 = np.random.sample((2,3,5))
 
 #4. Print a.
 print(a)
+print("-----")
+print(a1)
+print("-----")
+print(a2)
 
 
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
@@ -31,23 +35,24 @@ print(b)
 (a.size) == (b.size)
 
 #8. Are you able to add a and b? Why or why not?
-#No, because they don't have the same number of elements in each list
 np.add(a,b)
+#No, because they don't have the same number of elements in each list
+
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
 c = b.transpose([1,2,0])
-
+print(c)
 
 #10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
-#Because a and c have the same structure, same number of elements in each list
 d = np.add(a,c)
+#Because a and c have the same structure, same number of elements in each list
 
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
-# Each value in d is greather by 1 than the value in the same position in a? This is because the values in c that we added to a, were all 1.
 print(a)
+print("--------")
 print(d)
-
+# Each value in d is greather by 1 than the value in the same position in a? This is because the values in c that we added to a, were all 1.
 
 
 #12. Multiply a and c. Assign the result to e.
@@ -55,8 +60,8 @@ e = np.multiply(a,c)
 
 
 #13. Does e equal to a? Why or why not?
+print(e)
 #Yes, because all values in c are 1, any value multiplied by 1 stays the same. So values in a multiplied by 1, will stay the same.
-
 
 
 #14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
@@ -83,8 +88,25 @@ Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
+#Solution without Numpy:
+for x in range(len(f)):
+    for y in range(len(f[0])):
+        for z in range(len(f[0][0])):
+            val = d[x,y,z]
+            if (val > d_min) & (val < d_mean):
+                f[x,y,z] = 25
+            elif (val > d_mean) & (val < d_max):
+                f[x,y,z] = 75
+            elif val == d_min:
+                f[x,y,z] = 0
+            elif val == d_max:
+                f[x,y,z] = 100
 
-
+#Solution with Numpy:                
+print(np.where((d > d_min) & (d < d_mean), 25, 
+      np.where(((d > d_mean) & (d < d_max)), 75, 
+      np.where(d == d_min, 0,
+      np.where(d == d_max, 100,""))))) 
 
 
 """
@@ -107,7 +129,9 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 75.,  75.,  75.,  75.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
-
+print(d)
+print('-----')
+print(f)
 
 """
 #18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), how to use string values 
@@ -121,3 +145,34 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+
+#Wolution without Numpy:
+
+g = np.ndarray.astype(f, dtype = str)
+
+for x in range(len(g)):
+    for y in range(len(g[0])):
+        for z in range(len(g[0][0])):
+            val = d[x,y,z]
+            if (val > d_min) & (val < d_mean):
+                g[x,y,z] = 'A'
+            elif (val > d_mean) & (val < d_max):
+                g[x,y,z] = 'B'
+            elif val == d_min:
+                g[x,y,z] = 'C'
+            elif val == d_max:
+                g[x,y,z] = 'D'
+            else:
+                g[x,y,z] = 'E'
+                
+print(g)
+
+
+#Solution with Numpy:
+
+print(np.where((d > d_min) & (d < d_mean), 'A', 
+      np.where(((d > d_mean) & (d < d_max)), 'B', 
+      np.where(d == d_min, 'C', 
+      np.where(d == d_max, 'D','E'))))) 
+
+
