@@ -1,6 +1,10 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
+<<<<<<< HEAD
 # Guided Project: Business Intelligence with Tableau
+=======
+# Project: Business Intelligence with Tableau
+>>>>>>> upstream/master
 
 ## Overview
 
@@ -62,6 +66,7 @@ The following deliverables should be pushed to your Github repo for this chapter
     2|Exceeds expectations, you wonderful creature, you!
 
 This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+<<<<<<< HEAD
 
 ## Presentation Guideline and Criteria
 
@@ -99,3 +104,5 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Walk the audience through your process of designing and constructing your visualizations and your Tableau Story including what techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
 * One important mistake you made:
   * Did you made a mistake in the construction of your visualizations? Did you aggregate a field incorrectly?
+=======
+>>>>>>> upstream/master

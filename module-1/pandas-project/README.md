@@ -1,6 +1,10 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
+<<<<<<< HEAD
 # Guided Project: Demonstration of Data Cleaning and Manipulation with Pandas
+=======
+# Project: Data Cleaning and Manipulation with Pandas
+>>>>>>> upstream/master
 
 ## Overview
 
@@ -45,6 +49,7 @@ The following deliverables should be pushed to your Github repo for this chapter
 * [StackOverflow Pandas Questions](https://stackoverflow.com/questions/tagged/pandas)
 * [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets)
 * [Kaggle Data Sets](https://www.kaggle.com/datasets)
+<<<<<<< HEAD
 
 ## Project Feedback + Evaluation
 
@@ -104,3 +109,5 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Walk the audience through your data wrangling workflow including what initial problems you identified in the data, what cleaning and manipulation techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
 * One important mistake you made:
   * Did you made a mistake planning your time? Maybe transforming a variable that wasn't useful? Accidentally dropping one that was?
+=======
+>>>>>>> upstream/master

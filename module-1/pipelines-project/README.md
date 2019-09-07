@@ -1,6 +1,10 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
+<<<<<<< HEAD
 # Guided Project: Web Data Pipeline
+=======
+# Project: Web Data Pipeline
+>>>>>>> upstream/master
 
 ## Overview
 
@@ -46,6 +50,7 @@ The following deliverables should be pushed to your Github repo for this chapter
 * [Python List Comprehensions Documentation](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 * [Python Errors and Exceptions Documentation](https://docs.python.org/3/tutorial/errors.html)
 * [StackOverflow String Operation Questions](https://stackoverflow.com/questions/tagged/string+python)
+<<<<<<< HEAD
 
 ## Project Feedback + Evaluation
 
@@ -105,3 +110,5 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Walk the audience through your process of designing and constructing your data pipeline including what tools and techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
 * One important mistake you made:
   * Did you made a mistake in the construction of your pipeline? Did you perform one of the operations incorrectly?
+=======
+>>>>>>> upstream/master

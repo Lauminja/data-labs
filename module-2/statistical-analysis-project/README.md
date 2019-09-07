@@ -1,6 +1,10 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
+<<<<<<< HEAD
 # Guided Project: Statistical Analysis
+=======
+# Project: Statistical Analysis
+>>>>>>> upstream/master
 
 ## Overview
 
@@ -64,6 +68,7 @@ The following deliverables should be pushed to your Github repo for this project
     2|Exceeds expectations, you wonderful creature, you!
 
 This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+<<<<<<< HEAD
 
 ## Presentation Guideline and Criteria
 
@@ -105,3 +110,5 @@ This will be useful as an overall gauge of whether you met the project goals, bu
     * Walk the audience through your data wrangling workflow including what initial problems you identified in the data, what cleaning and manipulation techniques you employed, what avenues you decided to pursue and why, and what lessons you learned.
 * One important mistake you made:
     * Did you made a mistake planning your time? Maybe transforming a variable that wasn't useful? Accidentally dropping one that was?
+=======
+>>>>>>> upstream/master

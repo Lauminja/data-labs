@@ -1,6 +1,10 @@
 ![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
 
+<<<<<<< HEAD
 # Guided Project: API and Web Data Scraping
+=======
+# Project: API and Web Data Scraping
+>>>>>>> upstream/master
 
 ## Overview
 
@@ -44,6 +48,7 @@ The following deliverables should be pushed to your Github repo for this chapter
 * [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [Stack Overflow Python Requests Questions](https://stackoverflow.com/questions/tagged/python-requests)
 * [StackOverflow BeautifulSoup Questions](https://stackoverflow.com/questions/tagged/beautifulsoup)
+<<<<<<< HEAD
 
 ## Project Feedback + Evaluation
 
@@ -104,3 +109,5 @@ This will be useful as an overall gauge of whether you met the project goals, bu
   * Walk the audience through the web page you chose, the type of data you decided to obtain from it, and how you went about scraping the page, parsing the HTML, and cleaning the data.
 * One important mistake you made:
   * Did you call the API incorrectly? Did you make some errors while scraping the web page?
+=======
+>>>>>>> upstream/master

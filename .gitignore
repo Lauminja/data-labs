@@ -2,4 +2,7 @@
 .idea
 venv/
 .ipynb_checkpoints
+<<<<<<< HEAD
 module-1/lab-data_cleaning/your-code/outliers.csv
+=======
+>>>>>>> upstream/master
