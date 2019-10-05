@@ -51,7 +51,7 @@ To complete this lab, follow each of the steps below.
     - Create a *treemap* visualization containing labels for Team and Average Completion Percentage.
     - Average Completion Percentage should inform both the size of the boxes and the colors. For the colors, choose the Red-Blue Diverging palette so that teams with high percentages are colored blue and ones with low percentages are colored red.
     - Filter the data for 2017 by dragging the Year field into the Filter section and see how the visualization changes. You can also add a filter box by selecting *Analysis > Filters > Year*. Change the filter to 2016 and then to 2015 using the filter box we just added and note how the visualization changes.
-9. Let's look at how some defensive statistics - specifically, the average number of sacks, interceptions, and safeties for each team when they win.
+--> 9. Let's look at how some defensive statistics - specifically, the average number of sacks, interceptions, and safeties for each team when they win.
     - Start by creating a new sheet containing a tabular visualization showing Average Sacks, Average Interceptions, and Average Safeties by Team (rows). Remember that Tableau will sum each of the measures by default, so you will need to change each measure to display the average instead of the sum. To do this, click on the drop-down arrow for each metric, select *Measure*, and change the selection from *Sum* to *Average*.
     - Filter the data for only games the teams won by by dragging the Result field to the Filters section and selecting Win.
     - Open the Show Me menu in the upper right hand corner of the screen and select the horizontal bar chart option. You should see a set of horizontal bars for each metric we chose for each team.
