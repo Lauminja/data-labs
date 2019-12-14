@@ -5,12 +5,12 @@ Eg, Flight Delays and Cancellations:
 - This relational data set can help you practice your SQL joins as well as supervised learning as you attempt to predict which flights will be delayed and by how much time. There are also a variety of ways to explore this data set to determine which airlines are most efficient, what times of day there tends to be the most delays, which cities have more frequent delays than others, and how all this changes over time.
 
 Steps:
-* Download file(s)
-* Create a new MySQL database where your data will eventually be stored.
-* Create a new Jupyter Notebook for your project.
-* In the Jupyter Notebook, read the data files using Python.
-* Perform any necessary data wrangling and cleaning using Python.
-* Create a connection to your MySQL database using `pymysql` and `sqlalchemy` and write the clean version of the data to the database.
+* Download file(s) +
+* Create a new MySQL database where your data will eventually be stored. +
+* Create a new Jupyter Notebook for your project. +
+* In the Jupyter Notebook, read the data files using Python. +
+* Perform any necessary data wrangling and cleaning using Python. +
+* Create a connection to your MySQL database using `pymysql` and `sqlalchemy` and write the clean version of the data to the database. +
 
 Other resources:
 Web Scraping as an option to obtain data:
@@ -26,8 +26,8 @@ Other useful ideas:
 - [What are some good data science projects?](https://www.quora.com/What-are-some-good-data-science-projects)
 
 ### Day 2
-* In your Jupyter Notebook, read the clean data from your MySQL database.
-* Using Pandas, generate summaries of the data and calculate descriptive statistics.
+* In your Jupyter Notebook, read the clean data from your MySQL database. +
+* Using Pandas, generate summaries of the data and calculate descriptive statistics. +
 * Practice generating a few basic charts and graphs using `matplotlib` or `seaborn` as well.
 * Export your clean data set to a CSV file.
 * Open Tableau Public and load the CSV file.
