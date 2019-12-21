@@ -28,11 +28,11 @@ Other useful ideas:
 ### Day 2
 * In your Jupyter Notebook, read the clean data from your MySQL database. +
 * Using Pandas, generate summaries of the data and calculate descriptive statistics. +
-* Practice generating a few basic charts and graphs using `matplotlib` or `seaborn` as well.
-* Export your clean data set to a CSV file.
-* Open Tableau Public and load the CSV file.
-* Explore the data in Tableau and look for interesting insights.
-* Put together an annotated Tableau Story communicating the insights you have discovered.
+* Practice generating a few basic charts and graphs using `matplotlib` or `seaborn` as well. +/-
+* Export your clean data set to a CSV file.+
+* Open Tableau Public and load the CSV file.+
+* Explore the data in Tableau and look for interesting insights.+
+* Put together an annotated Tableau Story communicating the insights you have discovered.+
 
 ### Day 3
 * If you are planning on doing supervised machine learning, identify the target variable you would like to train a model to predict. Also determine whether you will be doing regression (target variable is continuous) or classification (target variable is discrete).
